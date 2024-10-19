@@ -1,0 +1,211 @@
+/* グローバルスタイル */
+body {
+    font-family: "Georgia", serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f7f1e1; /* 柔らかいクリーム色の背景 */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* ヘッダーとナビゲーション */
+  header {
+    background-color: #3b3b3b; /* 落ち着いた黒 */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 50%;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #d4a373; /* ドイツの旗の金色を参考にした色 */
+  }
+
+  /* ビールフェストセクションのスタイル */
+#beer-festival {
+    background-color: #f9f9f9; /* 明るい背景色 */
+    padding: 20px;
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 軽い影をつける */
+    margin: 20px auto; /* セクションの中央揃え */
+    width: 80%; /* セクションの幅を設定 */
+  }
+  
+  #beer-festival h2 {
+    font-size: 28px; /* メインタイトルのフォントサイズ */
+    color: #8b0000; /* 濃い赤色 */
+    margin-bottom: 10px; /* タイトル下の余白 */
+    text-align: center; /* 中央揃え */
+  }
+  
+  #beer-festival p {
+    font-size: 16px; /* 本文のフォントサイズ */
+    line-height: 1.6; /* 行間を設定 */
+    color: #333; /* 濃いグレー */
+    margin-bottom: 15px; /* 段落間の余白 */
+  }
+  
+  #beer-festival h3 {
+    font-size: 22px; /* サブタイトルのフォントサイズ */
+    color: #5b5b5b; /* グレー */
+    margin-top: 20px; /* 上部の余白 */
+    margin-bottom: 10px; /* 下部の余白 */
+  }
+  
+  #beer-festival ul {
+    list-style-type: none; /* デフォルトのリストスタイルを削除 */
+    padding: 0; /* パディングをゼロに */
+  }
+  
+  #beer-festival ul li {
+    background-color: #ffe4c4; /* リストアイテムの背景色 */
+    padding: 10px; /* 内側の余白 */
+    margin: 5px 0; /* アイテム間の余白 */
+    border-radius: 5px; /* 角を丸くする */
+  }
+  
+  #beer-festival strong {
+    color: #8b0000; /* 濃い赤色 */
+    font-weight: bold; /* 太字 */
+  }
+  
+  
+
+  /* フッター */
+footer {
+    background-color: #f7e5d4;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* 画面中央に収まるように幅を調整 */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* 要素を両端に配置 */
+    align-items: center; /* 縦方向の中央揃え */
+    padding: 20px;
+    flex-wrap: wrap; /* 画面が狭い場合に要素が下に並ぶ */
+    gap: 40px;
+  }
+  
+  .footer-name {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    width: 80px; /* ロゴサイズを調整 */
+    height: 80px;
+    margin-right: 20px; /* ロゴとテキスト間のスペース */
+  }
+  
+  footer p {
+    color: #d4a373;
+    margin: 0;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px; /* ソーシャルメディアアイコンと予約ボタンの間隔 */
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px; /* アイコンの高さも固定 */
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* 電話と予約ボタンの間の間隔 */
+  }
+  
+  .reserve-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .reserve-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .footer-bottom {
+    background-color: #333333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  /* レスポンシブデザイン */
+@media only screen and (max-width: 745px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding: 15px;
+  }
+
+  .hero-title {
+    font-size: 1.2rem;
+  }
+
+  .hero-explein {
+    font-size: 0.9rem;
+  }
+}

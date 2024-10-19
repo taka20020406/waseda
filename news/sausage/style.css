@@ -1,0 +1,240 @@
+/* グローバルスタイル */
+body {
+    font-family: "Georgia", serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f7f1e1; /* 柔らかいクリーム色の背景 */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* ヘッダーとナビゲーション */
+  header {
+    background-color: #3b3b3b; /* 落ち着いた黒 */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 50%;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #d4a373; /* ドイツの旗の金色を参考にした色 */
+  }
+
+  /* 基本設定 */
+body {
+    font-family: 'Georgia', serif; /* 優雅なフォント */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* 落ち着いた背景色 */
+}
+
+/* メインセクション */
+main {
+    max-width: 800px; /* 最大幅 */
+    margin: 20px auto; /* 中央寄せ */
+    padding: 30px; /* 内側の余白 */
+    background-color: #ffffff; /* 背景色 */
+    border-radius: 10px; /* 角の丸み */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 柔らかい影 */
+}
+
+/* セクションタイトル */
+h2 {
+    font-size: 2.5em; /* フォントサイズ */
+    color: #7b4b2c; /* 温かみのある色 */
+    margin-bottom: 15px; /* 下の余白 */
+    border-bottom: 2px solid #7b4b2c; /* 下の境界線 */
+    padding-bottom: 10px; /* 下の内側の余白 */
+}
+
+/* 日付 */
+p:first-of-type {
+    color: #6c757d; /* 日付の色 */
+    font-size: 0.95em; /* フォントサイズ */
+}
+
+/* サブタイトル */
+h3 {
+    font-size: 1.8em; /* フォントサイズ */
+    color: #5a5a5a; /* 色 */
+    margin-top: 25px; /* 上の余白 */
+}
+
+/* 概要のテキスト */
+p {
+    margin-bottom: 20px; /* 下の余白 */
+    color: #343a40; /* テキストの色 */
+}
+
+/* リスト */
+ul {
+    list-style: none; /* リストのデフォルトスタイルを削除 */
+    padding: 0; /* パディングを削除 */
+}
+
+li {
+    background-color: #f0f0f0; /* リストアイテムの背景色 */
+    padding: 12px; /* 内側の余白 */
+    border-left: 5px solid #7b4b2c; /* 左の境界線 */
+    margin: 8px 0; /* 上下の余白 */
+    transition: background-color 0.3s; /* ホバー効果用のトランジション */
+}
+
+li:hover {
+    background-color: #e2e6ea; /* ホバー時の色 */
+}
+
+/* 特典と注意事項の強調 */
+strong {
+    color: #7b4b2c; /* 強調テキストの色 */
+}
+
+/* 注意事項のテキスト */
+h3 + p {
+    font-style: italic; /* イタリック体 */
+    color: #6c757d; /* 注意事項の色 */
+}
+
+
+/* フッター */
+footer {
+    background-color: #f7e5d4;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* 画面中央に収まるように幅を調整 */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* 要素を両端に配置 */
+    align-items: center; /* 縦方向の中央揃え */
+    padding: 20px;
+    flex-wrap: wrap; /* 画面が狭い場合に要素が下に並ぶ */
+    gap: 40px;
+  }
+  
+  .footer-name {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    width: 80px; /* ロゴサイズを調整 */
+    height: 80px;
+    margin-right: 20px; /* ロゴとテキスト間のスペース */
+  }
+  
+  footer p {
+    color: #d4a373;
+    margin: 0;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px; /* ソーシャルメディアアイコンと予約ボタンの間隔 */
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px; /* アイコンの高さも固定 */
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* 電話と予約ボタンの間の間隔 */
+  }
+  
+  .reserve-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .reserve-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .footer-bottom {
+    background-color: #333333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  @media only screen and (max-width: 745px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+    .logo {
+      max-width: 80px;
+    }
+  
+    .main-title {
+      font-size: 1.5rem;
+    }
+  
+    .hero {
+      padding: 15px;
+    }
+  
+    .hero-title {
+      font-size: 1.2rem;
+    }
+  
+    .hero-explein {
+      font-size: 0.9rem;
+    }
+  }
